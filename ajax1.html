@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Primer ejemplo de AJAX</title>
+	<script>
+	var peticionHTTP;
+
+	function inicializar_XHR()
+	{
+	if(window.XMLHttpRequest)	
+		peticionHTTP = new XMLHttpRequest();
+	else peticionHTTP = new ActiveXObject("Microsoft.XMLHTTP");
+	}
+
+	function realizarPeticion(url, metodo, funcion) 
+	{
+		// Definir una función de cómo actuar:
+		peticionHTTP.onreadystatechange = funcion;
+		// Realizar la peticion:
+		peticionHTTP.open(metodo, url, true);
+		peticionHTTP.send(null);
+
+	}
+
+	function descargarArchivo() 
+	{
+		inicializar_XHR();
+		realizarPeticion('archivo.txt', 'GET', funcActuadora);
+	}
+
+	function funcActuadora()
+	{
+		if(peticionHTTP.readyState == 4)
+			if(peticionHTTP.status == 200)
+				document.write( peticionHTTP.responseText );		
+	}
+
+	window.onload = descargarArchivo;
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

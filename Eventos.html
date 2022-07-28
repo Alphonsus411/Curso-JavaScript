@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Eventos</title>
+</head>
+<body>
+	<!-- <button id="boton">Boton</button> -->
+	<a id="boton" href="http://www.sayonarababy.com">SayonaraBaby</a>
+	<input type="text" id="input">
+	<script>
+	(function(){ 
+		var saludo = function(e){
+			console.log('Diselo a la Mano');
+			e.preventDefault();
+		};
+		
+		var boton = document.getElementById('boton');
+		boton.addEventListener("click", saludo);
+			
+
+	}()) 
+
+
+	</script>
+
+</body>
+</html>

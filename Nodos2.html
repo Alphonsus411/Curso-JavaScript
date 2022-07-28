@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Document Object Mode1</title>
+</head>
+<body>
+	<ol id="lista">
+		<li>Contenido1</li>
+		<li>Contenido2</li>
+	</ol>
+	<script>
+
+		//crea un nuevo elemento con un nodo "li" relacionado
+		
+		var elemento = document.createElement("li");
+			contenido = document.createTextNode("Nuevo Texto Superior Autorizado");
+		elemento.appendChild(contenido);
+
+		//asocia un "elemento hijo" creando una variable con el contenido del "elemento padre"
+
+		
+		var padre = document.getElementsByTagName("li")[0].parentNode;
+			PrimerElemento = document.getElementsByTagName("li")[0];
+
+		//accede al primer elemento usando [] y el numero 0. Esto quiere decir que puede llamar a los restantes nodos usando su nomenclatura y posición (de arriba a abajo)
+
+		padre.insertBefore(elemento, PrimerElemento);
+
+		// permite insertar literalmente el "elemento padre" y posicionarlo por delante de los dos nodos creados anteriormente haciendo una asociación entre el "elemento hijo (Primer Elemento" y una búsqueda relacionada con este nodo anterior
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>

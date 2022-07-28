@@ -1,0 +1,96 @@
+<!	>
+<html lang="es">	
+<head>
+	<meta charset = "UTF-8">
+	<tittle>Operadores</tittle>
+	<script src="Hola Gaia.js"> </script>
+</head>
+<body>
+	<script >
+		/* OPERADORES ARITMÉTICOS:
+		SUMA: +
+		RESTA: -
+		MULTIPLICACIÓN: *
+		DIVISIÓN: /
+		RESIDUO: % */
+
+		var numero1 = 10, numero2 = 8, cadena = "101010";
+		console.log("OPERADORES ARITMÉTICOS");
+		console.log(numero1 + numero2) // SUMA 10 + 8;
+		console.log(numero1 - numero2) // RESTA 10 - 8;
+		console.log(numero1 * numero2) // MULTIPLICA 10 * 8;
+		console.log(numero1 / numero2) // DIVIDE 10 / 8;
+		console.log(numero1 % numero2) // RESIDUO 10 % 8;
+
+		console.log(numero1 + cadena) // CADENA + NÚMERO = CONCATENA;
+		console.log(cadena + cadena) // CONCATENA;
+
+		/* OPERADORES UNARIOS: no son símbolos, son palabras
+		typoff: Muestra una cadena con el tipo de dato que le demos */
+		console.log("OPERADOR UNARIO");
+		console.log(typeof numero1); // number
+		console.log(typeof cadena); // string
+		console.log(typeof true); // boolean
+
+		/* OPERADORES DE COMPARACIÓN: 
+		Exactamente igual que: ===
+		Dintinto que: !==
+		Menor que: <
+		Mayoe que: >
+		Menor o igual que: 8<=8 = true
+		Mayor o igual que: 9>=8 = true 		*/
+
+		console.log(numero1 === numero2); // false
+		console.log(numero1 !== numero2); // true
+		console.log(numero1 < numero2); // false
+		console.log(numero1 > numero2); // true
+		console.log(numero1 <= numero2); // false
+		console.log(10 >= 10); // true
+
+		/* OPERADORES LÓGICOS: Permiten realizar comparaciones más complejas 
+		AND (y): && devuelve true sólo cuando ambos son true
+		OR (o): || devuelve true si cualquiera de los dos valores es true
+		NOT (no): ! invierte el valor. true produce false y false produce true */
+
+		console.log("OPERADORES LÓGICOS");
+		console.log(false && true); // false
+		console.log(false && false); // false
+		console.log(true && true); // true
+					// n1 < n2 = false, n1 > n2 = true = false
+		console.log( (numero1 < numero2) && (numero1 > numero2) ); 
+
+		console.log("OPERADOR ||");
+		console.log(false || true); // true
+		console.log(false || false); // false
+		console.log(true || true); // true
+		// n1 es menor a n2 = false y n1 es mayor a n2 = verdadero = verdadero
+		console.log( (numero1 < numero2) || (numero1 > numero2) );
+
+		console.log("OPERADOR !");
+		console.log((numero1 > numero2)); // false
+		console.log((numero1 < numero2)); // true
+
+		/*OPERADOR TERNARIO: opera sobre tres valores
+		Cuando es true se elige el valor medio
+		Cuando es false se elige el de la derecha*/
+		console.log("OPERADOR TERNARIO");
+		console.log(true ? 2 : 1); // 2
+		console.log(false ? 2 : 1); // 1
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+	</script>
+	
+</body>
+</html>

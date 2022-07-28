@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="utf-8">
+	<title>Atributos DOM</title>
+	<style>
+		div {
+			width: 200px;
+			height: 200px;
+			background: #ddddddd;
+			display: inline-block;
+			margin-right: 10px;
+			border: 1px solid #AAAAAA;
+		}
+
+		.azul {
+			background: #oo74d9;
+			border: 1px solid #000;
+		}
+
+		.rojo {
+				background: #FF4136;
+				border: 1px solid #000;
+		}
+
+	</style>
+</head>
+<body>
+	<section id="contenedor">
+		<a href="http://www.falconmasters.com" id="enlace"></a>
+		<div class=""></div>
+		<div class=""></div>
+		
+	</section>
+
+	<script>
+
+		//añadimos un elemento nuevo a los ya generados previamente desde <style> 
+
+		var elemento = document.createElement("div");
+		var padre = document.getElementById("contenedor");
+		var referencia = document.getElementsByTagName("div")[0];
+		elemento.setAttribute("class", "azul");
+		padre.insertBefore(elemento, referencia);
+
+		//se pueden también añadir cambios de este tipo desde la consola de desarrollador en el navegador, pero primero hay que indexarlos aquí-- 
+
+
+
+
+	</script>
+
+</body>
+</html>

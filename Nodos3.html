@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Document Object Mode2</title>
+</head>
+<body>
+	<ol>
+		<li id="primero"><b>Contenido 1</b></li>
+		<li>Contenido 2</li>
+	</ol>
+	<script>
+		// ARREGLOS Y SUSTITUCIONES DE NODOS EN EL DOM
+
+
+		var elemento = document.createElement("li");
+		contenido = document.createTextNode("Nuevo Texto Autorizado Superior");
+		// script relacionado con la creación del tercer elemento o Nodo tipo "hijo"
+		elemento.appendChild(contenido);
+		// declaración del nodo "hijo"
+		
+		var padre = document.getElementsByTagName("li")[0].parentNode;
+			referencia = document.getElementsByTagName("li")[0]; 
+		padre.removeChild(referencia); 
+		//técnica de borrado de un elemento dado
+		
+
+
+
+
+	</script>
+</body>
+</html>

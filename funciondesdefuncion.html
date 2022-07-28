@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Transicional//EN"
+	"http//www.w3.org/TR/xhtml1/DTD/xhtml1-transicional.dtd">
+
+<html>
+<head>
+	
+</head>
+<body>
+
+<script type="text/javascript">
+	function uno () {
+		document.write ("soy la funcion número 1 ");
+	};
+	function dos () {
+		document.write ("llamando a 1: ");
+	};
+		
+
+	function tres () {//este parámetro llama a las dos funciones anteriores en un orden determinado
+		dos();
+		uno();
+	};
+
+		tres();//aquí se cumple la condición del parámetro y se activa el funcionamiento de la llamada múltiple
+
+</script>
+
+</body>
+</html>

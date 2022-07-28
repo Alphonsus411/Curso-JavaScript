@@ -1,0 +1,48 @@
+!<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document Object Model</title>
+</head>
+<body>
+	<hl id="titulo">Pelar Patatas</hl>
+	<div id="subtitulo"></div>
+	<p>1.- Para pelar <b>patatas</b> primero, debes comprar un kilo de patatas.
+	
+	<p id="segundo">2.- Una vez tengas las patatas, debes lavarlas con agua y coger un cuchillo. 
+
+	<p>3.-Una vez hayas cogido el cuchillo, debes pelar las patatas. 
+
+	<p>4.-Después de pelarlas, debes echarlas en la olla exprés. 
+		
+	</p>
+
+	<script>
+		
+		var elementosP = document.getElementsByTagName("p");
+		var SegundoParrafo = document.getElementById("segundo");
+
+		// 1.- Crear el Elemento.
+		var elemento = document.createElement("h2");
+		// 2.- Crear un nodo de texto.
+		var contenido = document.createTextNode("Patatas Cocidas Peladas");
+		// 3.- Añadir el nodo de texto al elemento. 
+		elemento.appendChild(contenido);
+		// 4.- Agregar atributos al elemento. 
+		elemento.setAttribute("align", "center");
+		// 5.- Agregar el elemento al documento. 
+		document.getElementById("subtitulo").appendChild(elemento);
+
+
+
+
+
+
+
+
+	</script>
+
+
+</body>
+</html>
